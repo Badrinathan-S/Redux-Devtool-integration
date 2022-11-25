@@ -28,8 +28,8 @@ function Counter(){
                 <h1>Counter</h1>
                 <h2>{counter}</h2>
                 <div>
-                    <Button className='Buttons' loading={loading} variant="contained" type="primary" onClick={() => handleIncrement()}><PlusOutlined /></Button>
-                    <Button className='Buttons' loading={loading} variant="contained" type="primary" onClick={() => handleDecrement()}><MinusOutlined /></Button>
+                    <Button className='Buttons' disabled={loading} variant="contained" type="primary" onClick={() => handleIncrement()}><PlusOutlined /></Button>
+                    <Button className='Buttons' disabled={loading} variant="contained" type="danger" onClick={() => handleDecrement()}><MinusOutlined /></Button>
                 </div>
             </div>
         </>
